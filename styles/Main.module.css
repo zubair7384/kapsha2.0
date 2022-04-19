@@ -171,3 +171,12 @@
     font-weight: 400;
   }
 }
+
+@media only screen and (max-width: 380px) {
+  .BackgroundText > span {
+    min-width: 475px !important;
+  }
+  .KapshaText {
+    margin-bottom: 45%;
+  }
+}
