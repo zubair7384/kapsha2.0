@@ -1,0 +1,173 @@
+.Main {
+  display: flex;
+  align-items: center;
+}
+.BackgroundWrapper {
+  display: flex;
+  justify-content: start;
+  height: 100vh;
+}
+.BackgroundWrapper > span {
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+.GreenWrapper {
+  position: absolute;
+  width: 72%;
+  display: flex;
+  justify-content: center;
+  margin-top: -24rem;
+}
+.BackgroundText {
+  display: flex;
+  justify-content: center;
+  width: 72%;
+  margin: 0 auto;
+}
+.BackgroundText > span {
+  top: -5rem !important;
+}
+.TextWrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.KapshaImage {
+  z-index: 2;
+  height: fit-content;
+}
+.GreenDay,
+.GreenNight {
+  position: absolute;
+  margin-left: 40.5%;
+  margin-top: 6%;
+  transition: 1000ms;
+  animation: fadeInGreen ease 15s;
+  -webkit-animation: fadeIn ease 15s;
+  -moz-animation: fadeIn ease 15s;
+  -o-animation: fadeIn ease 15s;
+  -ms-animation: fadeIn ease 15s;
+}
+.GreenDay {
+  z-index: 3;
+}
+.GreenNight {
+  z-index: 1;
+}
+.GreenNight:hover {
+  transform: rotate(180deg);
+  z-index: 3;
+  margin-left: 39.5%;
+  margin-top: 5%;
+  width: 19.5%;
+}
+.GreenDay:hover {
+  transform: rotate(-180deg);
+  z-index: 1;
+  margin-left: 39.5%;
+  margin-top: 5%;
+  width: 19.5%;
+}
+.KapshaText {
+  width: 12%;
+  position: absolute;
+  left: 17%;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  margin-top: 5%;
+}
+.LaunchingText {
+  display: none;
+}
+@media only screen and (max-width: 2050px) {
+  .KapshaText {
+    font-size: 38px;
+  }
+  .GreenDay,
+  .GreenNight {
+    min-width: 90% !important;
+  }
+}
+@media only screen and (max-width: 1885px) {
+  .KapshaText {
+    line-height: 48px;
+  }
+  .GreenDay,
+  .GreenNight {
+    min-width: 85% !important;
+  }
+}
+@media only screen and (max-width: 1620px) {
+  .KapshaText {
+    line-height: 48px;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .KapshaText {
+    line-height: 44px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .KapshaText {
+    width: 15%;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .GreenDay,
+  .GreenNight {
+    min-width: 75% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .BackgroundWrapper > span {
+    transform: rotate(-100deg);
+    right: -87%;
+    bottom: 8%;
+    min-width: 170% !important;
+  }
+  .KapshaText {
+    width: 15%;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 60%;
+  }
+  .GreenWrapper {
+    top: 2%;
+    margin: 0;
+    width: 30%;
+    right: 2%;
+  }
+  .BackgroundText > span {
+    transform: rotate(-90deg);
+    width: 100% !important;
+    min-width: 140% !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .LaunchingText {
+    display: block;
+    font-weight: 700;
+  }
+  .BackgroundText > span {
+    top: -6rem !important;
+    min-width: 651px !important;
+    min-height: 97px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .KapshaText {
+    width: 30%;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 75%;
+    margin-left: -2%;
+    font-weight: 400;
+  }
+}
