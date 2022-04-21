@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../../styles/Main.module.css";
 
 export default function Main(props) {
-  const [night, setNight] = useState(false);
   const nightShift = props.night ? { color: "#9CD300" } : { color: "#000" };
   const {
     Main,
@@ -17,6 +16,7 @@ export default function Main(props) {
     GreenWrapper,
     TextWrapper,
     LaunchingText,
+    FadeIn,
   } = styles;
   return (
     <div className={Main}>
@@ -39,7 +39,7 @@ export default function Main(props) {
           />
         )}
       </div>
-      <div className={BackgroundText}>
+      <div className={`${BackgroundText} ${FadeIn}`}>
         {props.night ? (
           <Image
             width={1600}

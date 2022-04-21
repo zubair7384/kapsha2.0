@@ -20,7 +20,7 @@ export default function Home() {
         />
       </Head>
       <Header handleDark={handleDark} night={dark} />
-      <Main night={dark} />
+      <Main night={dark} styles={styles} />
       <Footer night={dark} />
     </div>
   );
