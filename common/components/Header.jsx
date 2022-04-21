@@ -13,6 +13,7 @@ export default function Header(props) {
     AppLogo,
     Tooltip,
     TooglerWrapper,
+    MobileToogler,
   } = styles;
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -23,7 +24,7 @@ export default function Header(props) {
       <header className={AppHeader}>
         <div className={TooglerWrapper} onClick={props.handleDark}>
           {width <= 768 ? (
-            <div>
+            <div className={MobileToogler}>
               <>
                 {props.night ? (
                   <Image
@@ -67,7 +68,6 @@ export default function Header(props) {
             src="/nightLogo.svg"
             alt="kapsha"
             className={AppLogo}
-            // className="AppLogo w3-animate-fading"
           />
         ) : (
           <Image
@@ -76,7 +76,6 @@ export default function Header(props) {
             src="/kapshaLogo.svg"
             alt="kapsha"
             className={AppLogo}
-            // className="AppLogo w3-animate-fading"
           />
         )}
       </header>

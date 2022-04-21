@@ -49,6 +49,10 @@
     right: 6%;
     bottom: 8%;
   }
+  .MobileToogler {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 @keyframes fadeIn {
